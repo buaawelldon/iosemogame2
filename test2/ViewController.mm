@@ -51,6 +51,7 @@ static int tempposy=0;
 
 static int faceid;
 static int hitFlag=0;
+int change;
 NSString *happy;
 NSString *sad;
 NSString *fear;

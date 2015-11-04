@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8A584B045ACAF6F8099B6B23C3CF0CE3967A4D1C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8A584B045ACAF6F8099B6B23C3CF0CE3967A4D1C" : 0,
+    "F95476F55FD793ECEBB714B31CDAC4697774A791" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BDA057FF-3A28-4B7E-963B-A0AA705C0DDC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8A584B045ACAF6F8099B6B23C3CF0CE3967A4D1C" : "iosemogame2\/",
+    "F95476F55FD793ECEBB714B31CDAC4697774A791" : "EmoComputing_ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "test2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "test2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/buaawelldon\/iosemogame2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8A584B045ACAF6F8099B6B23C3CF0CE3967A4D1C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/buaawelldon\/iosemogame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F95476F55FD793ECEBB714B31CDAC4697774A791"
+    }
+  ]
+}
