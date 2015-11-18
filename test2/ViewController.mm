@@ -11,6 +11,7 @@
 #import <opencv2/objdetect/objdetect.hpp>
 #import <dispatch/dispatch.h>
 #import "jsonnull.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 
 @interface ViewController ()
@@ -367,6 +368,7 @@ NSArray *emoString = [NSArray arrayWithObjects:@"angry",@"disgust",@"fear",@"hap
         cv::Mat(rgbMat, faces[0]).copyTo(face);
         
         faceImage = [self UIImageFromCVMat:face];
+        AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
         
         
     }

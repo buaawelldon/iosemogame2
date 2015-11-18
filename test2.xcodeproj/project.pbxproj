@@ -39,6 +39,8 @@
 		B67F45821BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = B67F45811BB0FFC200DB3B69 /* haarcascade_frontalface_alt.xml */; };
 		CF5CCDAD1BE1E6B800687AA1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */; };
 		CF5CCDB51BE260F600687AA1 /* jsonnull.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5CCDB31BE260F600687AA1 /* jsonnull.m */; };
+		CF8B07F21BFBB3C300073A91 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8B07F11BFBB3C300073A91 /* opencv2.framework */; settings = {ASSET_TAGS = (); }; };
+		CF8B07F41BFBB42800073A91 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8B07F31BFBB42800073A91 /* AudioToolbox.framework */; };
 		CF8ED56D1BA0A69F00783BBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED56C1BA0A69F00783BBC /* main.m */; };
 		CF8ED5701BA0A69F00783BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED56F1BA0A69F00783BBC /* AppDelegate.m */; };
 		CF8ED5731BA0A69F00783BBC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF8ED5721BA0A69F00783BBC /* ViewController.mm */; };
@@ -120,6 +122,8 @@
 		CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		CF5CCDB31BE260F600687AA1 /* jsonnull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonnull.m; sourceTree = "<group>"; };
 		CF5CCDB41BE260F600687AA1 /* jsonnull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonnull.h; sourceTree = "<group>"; };
+		CF8B07F11BFBB3C300073A91 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		CF8B07F31BFBB42800073A91 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CF8ED5671BA0A69F00783BBC /* test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8ED56B1BA0A69F00783BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8ED56C1BA0A69F00783BBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,11 +151,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8B07F41BFBB42800073A91 /* AudioToolbox.framework in Frameworks */,
 				B67E6C111BDEBE28006824E8 /* MobileCoreServices.framework in Frameworks */,
 				B67E6C0F1BDEBAA6006824E8 /* CoreVideo.framework in Frameworks */,
 				B67E6C0D1BDEBA93006824E8 /* CoreMedia.framework in Frameworks */,
 				B67E6C0B1BDEBA58006824E8 /* Foundation.framework in Frameworks */,
 				B67E6C091BDEBA18006824E8 /* AssetsLibrary.framework in Frameworks */,
+				CF8B07F21BFBB3C300073A91 /* opencv2.framework in Frameworks */,
 				B67E6C071BDEB9F7006824E8 /* CoreImage.framework in Frameworks */,
 				CF5CCDAD1BE1E6B800687AA1 /* opencv2.framework in Frameworks */,
 				B67E6C051BDEB9C5006824E8 /* ImageIO.framework in Frameworks */,
@@ -226,7 +232,9 @@
 		CF8ED55E1BA0A69F00783BBC = {
 			isa = PBXGroup;
 			children = (
+				CF8B07F31BFBB42800073A91 /* AudioToolbox.framework */,
 				CF5CCDAC1BE1E6B800687AA1 /* opencv2.framework */,
+				CF8B07F11BFBB3C300073A91 /* opencv2.framework */,
 				B67E6C101BDEBE28006824E8 /* MobileCoreServices.framework */,
 				B67E6C0E1BDEBAA6006824E8 /* CoreVideo.framework */,
 				B67E6C0C1BDEBA93006824E8 /* CoreMedia.framework */,
