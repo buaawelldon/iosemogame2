@@ -36,6 +36,7 @@ UIImage *faceImage;
 UIImage *newim;
 UIImage * explode;
 UIImage * hitemo;
+static int curRealDisgust = 1,curRealSad=1,curRealHappy=1,curRealSurprise=1,curRealAngry=1,curRealNeutral=1,curRealFear=1;
 static int currentfaceid=3;
 static int pos=0;
 bool faceDetected = false;
@@ -62,6 +63,14 @@ NSString *angry;
 NSString *disgust;
 NSDictionary *emotions;
 NSString *mainEmotion;
+Boolean realFaces = false;
+NSArray *realNeutral = [NSArray arrayWithObjects:@"neutral1.jpg", @"neutral2.jpg",@"neutral3.jpg",@"neutral4.jpg",@"neutral5.jpg",@"neutral6.jpg",nil];
+NSArray *realSad = [NSArray arrayWithObjects:@"sad1.jpg",@"sad2.jpg",@"sad3.jpg",@"sad4.jpg",@"sad5.jpg",@"sad6.jpg", nil];
+NSArray *realSurprise = [NSArray arrayWithObjects:@"surprise1.jpg",@"surprise2.jpg",@"surprise3.jpg",@"surprise4",@"surprise5.jpg",@"surprise6.jpg", nil];
+NSArray *realAngry = [NSArray arrayWithObjects:@"angry1.jpg",@"angry2.jpg",@"angry3.jpg",@"angry4.jpg",@"angry5.jpg",@"angry6.jpg",@"angry7.jpg",@"angry8.jpg",@"angry9.jpg",@"angry10.jpg", nil];
+NSArray *realDisgust = [NSArray arrayWithObjects:@"disgust1.jpg",@"disgust2.jpg",@"disgust3.jpg", nil];
+NSArray *realFear = [NSArray arrayWithObjects:@"fear1.jpg",@"fear2.jpg",@"fear3.jpg",@"fear4.jpg",@"fear5.jpg",@"fear6.jpg",@"fear7.jpg", nil];
+NSArray *realHappy = [NSArray arrayWithObjects:@"happy1.jpg",@"happy2.jpg",@"happy3.jpg",@"happy4.jpg", nil];
 NSArray *emoString = [NSArray arrayWithObjects:@"angry",@"disgust",@"fear",@"happy",@"neutral",@"sad",@"surprise",nil];
 //static int newstartx=0;
 -(BOOL)prefersStatusBarHidden{
@@ -615,6 +624,18 @@ NSArray *emoString = [NSArray arrayWithObjects:@"angry",@"disgust",@"fear",@"hap
     //NSLog(@"%d %d",newstartx,t);
 
 }
+
+- (IBAction)emoticonsClick:(id)sender {
+    realFaces = false;
+}
+
+
+- (IBAction)realFacesClick:(id)sender {
+    realFaces = true;
+}
+
+
+
 -(void)fillobj{
     currentfaceid=arc4random_uniform(7);
     faceid=currentfaceid;
@@ -623,34 +644,59 @@ NSArray *emoString = [NSArray arrayWithObjects:@"angry",@"disgust",@"fear",@"hap
 //    [self.imageView setFrame:neoframe];
     //NSLog(@"%d ",pos);
     if (faceid==0){
-        faceicon=[UIImage imageNamed:@"angry"];
-        
+        curRealAngry= arc4random_uniform(10);
+        if(realFaces==false)
+            faceicon=[UIImage imageNamed:@"angry"];
+        else
+            faceicon=[UIImage imageNamed:realAngry[curRealAngry]];
         [self.imageView setImage:faceicon];
-        
-        
     }
     if (faceid==1){
-        faceicon=[UIImage imageNamed:@"disgust"];
+        curRealDisgust=arc4random_uniform(3);
+        if(realFaces == false)
+            faceicon=[UIImage imageNamed:@"disgust"];
+        else
+            faceicon=[UIImage imageNamed:realDisgust[curRealDisgust]];
         [self.imageView setImage:faceicon];
     }
     if (faceid==2){
-        faceicon=[UIImage imageNamed:@"fear"];
+        curRealFear=arc4random_uniform(7);
+        if(realFaces==false)
+            faceicon=[UIImage imageNamed:@"fear"];
+        else
+            faceicon=[UIImage imageNamed:realFear[curRealFear]];
         [self.imageView setImage:faceicon];
     }
     if (faceid==3){
-        faceicon=[UIImage imageNamed:@"happy"];
+        curRealHappy=arc4random_uniform(4);
+        if(realFaces==false)
+            faceicon=[UIImage imageNamed:@"happy"];
+        else
+            faceicon=[UIImage imageNamed:realHappy[curRealHappy]];
         [self.imageView setImage:faceicon];
     }
     if (faceid==4){
-        faceicon=[UIImage imageNamed:@"neutral"];
+        curRealNeutral = arc4random_uniform(6);
+        if(realFaces==false)
+            faceicon=[UIImage imageNamed:@"neutral"];
+        else
+            faceicon=[UIImage imageNamed:realNeutral[curRealNeutral]];
         [self.imageView setImage:faceicon];
     }
     if (faceid==5){
-        faceicon=[UIImage imageNamed:@"sad"];
+        curRealSad = arc4random_uniform(6);
+        if(realFaces==false)
+            faceicon=[UIImage imageNamed:@"sad"];
+        else
+            faceicon=[UIImage imageNamed:realSad[curRealSad]];
         [self.imageView setImage:faceicon];
     }
     if (faceid==6){
-        faceicon=[UIImage imageNamed:@"surprise"];
+        curRealSurprise = arc4random_uniform(6);
+        if(realFaces==false)
+            faceicon=[UIImage imageNamed:@"surprise"];
+        else
+            faceicon=[UIImage imageNamed:realSurprise[curRealSurprise]];
         [self.imageView setImage:faceicon];
     }
     self.imageView.frame = CGRectMake(dropposx,  0, 48,47);

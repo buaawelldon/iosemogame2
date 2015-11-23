@@ -19,7 +19,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *bld2;
 @property (weak, nonatomic) IBOutlet UIImageView *bld3;
 @property (weak, nonatomic) IBOutlet UIImageView *bld4;
+@property (weak, nonatomic) IBOutlet UIButton *emoticonsButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *realFacesButton;
 @property (weak, nonatomic) IBOutlet UIImageView *faceView;
 @property (weak, nonatomic) IBOutlet UIImageView *baseimage;
 
